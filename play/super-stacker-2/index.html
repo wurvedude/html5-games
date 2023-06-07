@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash Game</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #game-container {
+            position: relative;
+            width: 75vh;
+            height: 56.25vh;
+        }
+        #game {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <div id="game-container">
+        <object id="game" data="superstacker2.swf">
+            <param name="movie" value="superstacker2..swf">
+            <param name="quality" value="high">
+            <param name="wmode" value="opaque">
+        </object>
+    </div>
+</body>
+</html>
